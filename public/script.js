@@ -30,8 +30,8 @@ $(document).ready(function() {
     $(".link").on("click", function() {
        var linkId = $(this)[0].id;
        var sectionId = linkId.substring(5, linkId.length);
-       var offset = $("#section-" + sectionId).offset().top;
-       var height = $("#section-" + sectionId).outerHeight();
+       var offset = $(".section-" + sectionId).eq(0).offset().top;
+       var height = $(".section-" + sectionId).eq(0).outerHeight();
        var pos = offset + height/2 - $(window).height()/2;
 
         $('html, body').animate({scrollTop: pos},'2000');

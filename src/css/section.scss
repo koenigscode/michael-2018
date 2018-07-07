@@ -1,82 +1,90 @@
 .section {
   width: 90%;
-  max-width: 1200px;
-  height: 300px;
-  padding: 50px 30px;
-  margin: 0 auto;
-  position: relative;
+  min-height: 400px;
+  max-width: 1000px;
+  margin: 50px auto;
+  border-radius: 10px;
   display: flex;
-  align-items: center;
+  padding: 50px;
+  flex-direction: column;
   justify-content: center;
-  transition: all 1s ease;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
 
-  &:hover {
-    max-width: 100%;
+  & .content {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-break: break-word;
+    justify-content: center;
+    align-items: flex-start;
 
-    .section-details {
-      opacity: 1;
-      max-width: 1000px;
+    & .title {
+      font-size: 60px;
+      margin: 0 0 5px;
+      line-height: 100%;
+    }
+
+    & .subtitle {
+      font-size: 20px;
+      margin: 0 0 15px;
+      padding: 0 3px 0;
+      font-style: italic;
+    }
+
+    & p {
+      font-size: 18px;
+      text-align: justify;
+      margin: 0;
+      line-height: 130%;
     }
   }
 
-  &-left {
-    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+  &-ueber {
+    @include section-bg($red, $pink, $url-web-image);
   }
 
-  &-right {
-    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  &-prog {
+    @include section-bg($amber, $orange, $url-prog-image);
   }
 
-  & .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  &-web {
+    @include section-bg($lime, $light-green, $url-web-image);
   }
 
-  & h2 {
-    font-size: 3em;
-    margin: 0 0 10px;
+  &-foto {
+    @include section-bg($cyan, $blue, $url-foto-image);
   }
 
-  & p {
-    font-size: 1.6em;
-    max-width: 600px;
-    text-align: center;
-    text-align-last: center;
-    line-height: 140%;
+  &-bild {
+    @include section-bg($pink, $purple, $url-bild-image);
   }
 
-  &-details {
-    //visibility: hidden;
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    transition: all 1s ease;
-    opacity: 0;
-    max-width: 0;
-    overflow: hidden;
-  }
+  @media (max-width: 767px) {
+    .content {
+      align-items: center;
 
-  &-red {
-    background: linear-gradient(to right, rgba($deep-orange, $gradient-transparency), rgba($red, $gradient-transparency));
-  }
+      .title {
+        font-size: 28px;
+        text-align: center;
+      }
 
-  &-orange {
-    background: linear-gradient(to right, rgba($deep-orange, $gradient-transparency), rgba($amber, $gradient-transparency));
-  }
+      .subtitle {
+        text-align: center;
+        font-size: 18px;
+      }
 
-  &-green {
-    background: linear-gradient(to right, rgba($lime, $gradient-transparency), rgba($light-green, $gradient-transparency));
-  }
+      p {
+        text-align: left;
+        line-height: 110%;
+        text-align: center;
+      }
 
-  &-blue {
-    background: linear-gradient(to right, rgba($blue, $gradient-transparency), rgba($cyan, $gradient-transparency));
-  }
+    }
 
-  &-pink {
-    background: linear-gradient(to right, rgba($pink, $gradient-transparency), rgba($purple, $gradient-transparency));
   }
 
 }

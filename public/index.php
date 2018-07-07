@@ -6,6 +6,7 @@ require "./includes/head.php";
 <script src="typeit.min.js"></script>
 </head>
 <body>
+<div id="particle"></div>
 <header class="header">
     <?php require "./includes/nav.php" ?>
     <div class="container">
@@ -15,73 +16,58 @@ require "./includes/head.php";
 </header>
 
 <main>
-    <section class="section section-red section-right" id="section-ueber">
-        <div class="section-details">
-            <span class="icon icon-c"></span>
-            <span class="icon icon-java"></span>
-        </div>
-        <div class="container">
-            <h2>Über Mich</h2>
-            <p>Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text
-                Dummy Text Dummy Text Dummy Text Dummy Text
-                Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text
-                Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text </p>
-        </div>
-    </section>
 
-    <section class="section section-orange section-left" id="section-prog">
-        <div class="container">
-            <h2>Programmieren</h2>
+    <section class="section section-ueber">
+        <div class="content">
+            <h2 class="title">Über Mich</h2>
+            <h3 class="subtitle">Michael König</h3>
             <p>Nachdem ich mich über ein Jahr lang mit der Programmierung in C beschäftigt habe, lerne ich derzeit Java,
                 eine objektorientierte und plattformunabhängige Programmiersprache, die überall (u.a.
-                Android-Smartphones) vertreten ist.</p>
-        </div>
-        <div class="section-details">
-            <span class="icon icon-c"></span>
-            <span class="icon icon-java"></span>
+                Android-Smartphones) vertreten ist.
+            </p>
         </div>
     </section>
 
-    <section class="section section-green section-right" id="section-web">
-        <div class="section-details" id="section-details-web">
-            <span class="icon icon-sass"></span>
-            <span class="icon icon-javascript"></span>
-            <span class="icon icon-php"></span>
-            <span class="icon icon-git"></span>
+    <section class="section section-prog">
+        <div class="content">
+            <h2 class="title">Programmieren</h2>
+            <h3 class="subtitle">C, Java</h3>
+            <p>Nachdem ich mich über ein Jahr lang mit der Programmierung in C beschäftigt habe und nun die Grundlagen
+                der objektorientierten Sprache Java behersche, lerne ich zurzeit GUI-Programmierung mit JavaFX.
+            </p>
         </div>
-        <div class="container">
-            <h2 class="title">Web-Entwicklung</h2>
+    </section>
+
+    <section class="section section-web">
+        <div class="content">
+            <h2 class="title">Web Development</h2>
+            <h3 class="subtitle">Sass, JS, PHP</h3>
             <p>Ich habe mich über die letzten Monate mit den verschiedensten Web-Development Technologien auseinander
-                gesetzt. Ich achte dabei stets auf moderne und responsive Websites, um Nutzern auf allen Endgeräten die
-                bestmögliche Erfahrung zu bieten.</p>
+                gesetzt. Mittlerweile habe ich mir einen guten Überblick verschafft und konzentriere mich derzeit auf
+                PHP.
+            </p>
         </div>
     </section>
 
-    <section class="section section-blue section-left" id="section-foto">
-        <div class="container">
+    <section class="section section-foto">
+        <div class="content">
             <h2 class="title">Fotografie</h2>
-            <p>In meiner Freizeit beschäftige ich mich auch gerne mit Fotografie und Bildbearbeitung. Ich nutze dazu die
-                Canon EOS 700D sowie Adobe Photoshop und Lightroom.</p>
-        </div>
-        <div class="section-details">
-            <span class="icon icon-adobephotoshop"></span>
-            <span class="icon icon-adobelightroom"></span>
+            <h3 class="subtitle">Canon EOS 700D</h3>
+            <p>Manchmal nutze ich auch meine Freizeit, um das ein oder andere Foto zu schießen und anschließend im
+                Lightroom-Katalog zu organisieren und bearbeiten.
+            </p>
         </div>
     </section>
 
-    <section class="section section-pink section-right" id="section-bild">
-        <div class="section-details">
-            <span class="icon icon-adobephotoshop"></span>
-            <span class="icon icon-adobelightroom"></span>
-        </div>
-        <div class="container">
+    <section class="section section-bild">
+        <div class="content">
             <h2 class="title">Bildbearbeitung</h2>
-            <p>In meiner Freizeit beschäftige ich mich auch gerne mit Fotografie und Bildbearbeitung. Ich nutze dazu die
-                Canon EOS 700D sowie Adobe Photoshop und Lightroom.</p>
+            <h3 class="subtitle">Adobe Photoshop, Adobe Lightroom</h3>
+            <p>Seit über 3 Jahren arbeite ich gelegentlich mit Adobe Photoshop und bearbeite Fotos oder erstelle
+                Designs von Grund auf.
+            </p>
         </div>
     </section>
-
-    <div id="particle"></div>
 
 </main>
 
@@ -107,7 +93,7 @@ require "./includes/head.php";
                     lifeLike: false,
                     cursor: false,
                     startDelay: 0,
-                })
+                });
             }
         }
     });
