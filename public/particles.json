@@ -1,14 +1,14 @@
 {
   "particles": {
     "number": {
-      "value": 88,
+      "value": 40,
       "density": {
         "enable": true,
         "valtpue_area": 700
       }
     },
     "color": {
-      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+      "value": ["#E91E63", "#03A9F4", "#8BC34A", "#FFC107"]
     },
     "shape": {
       "type": "circle",
@@ -100,6 +100,5 @@
         "particles_nb": 2
       }
     }
-  },
-  "retina_detect": true
+  }
 }

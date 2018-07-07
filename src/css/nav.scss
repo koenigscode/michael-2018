@@ -21,6 +21,7 @@
     white-space: nowrap;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 
     &.red:hover {
       border-color: $red;

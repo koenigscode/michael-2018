@@ -6,7 +6,6 @@ require "./includes/head.php";
 <script src="typeit.min.js"></script>
 </head>
 <body>
-<div id="particle"></div>
 <header class="header">
     <?php require "./includes/nav.php" ?>
     <div class="container">
@@ -16,17 +15,18 @@ require "./includes/head.php";
 </header>
 
 <main>
-    <section class="section section-green section-right" id="section-web">
-        <div class="container">
-            <h2 class="title">Web-Entwicklung</h2>
-            <p>Ich habe mich über die letzten Monate mit den verschiedensten Web-Development Technologien auseinander
-                gesetzt. Ich achte dabei stets auf moderne und responsive Websites, um Nutzern auf allen Endgeräten die
-                bestmögliche Erfahrung zu bieten.</p>
+    <section class="section section-red section-right" id="section-ueber">
+        <div class="section-details">
+            <span class="icon icon-c"></span>
+            <span class="icon icon-java"></span>
         </div>
-        <p class="section-details" id="section-details-web">Ich habe mich über die letzten Monate mit den
-            verschiedensten Web-Development Technologien auseinander
-            gesetzt. Ich achte dabei stets auf moderne und responsive Websites, um Nutzern auf allen Endgeräten die
-            bestmögliche Erfahrung zu bieten.</p>
+        <div class="container">
+            <h2>Über Mich</h2>
+            <p>Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text
+                Dummy Text Dummy Text Dummy Text Dummy Text
+                Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text
+                Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text </p>
+        </div>
     </section>
 
     <section class="section section-orange section-left" id="section-prog">
@@ -36,23 +36,52 @@ require "./includes/head.php";
                 eine objektorientierte und plattformunabhängige Programmiersprache, die überall (u.a.
                 Android-Smartphones) vertreten ist.</p>
         </div>
-        <p class="section-details" id="section-details-prog">Ich habe mich über die letzten Monate mit den
-            verschiedensten Web-Development Technologien auseinander
-            gesetzt. Ich achte dabei stets auf moderne und responsive Websites, um Nutzern auf allen Endgeräten die
-            bestmögliche Erfahrung zu bieten.</p>
+        <div class="section-details">
+            <span class="icon icon-c"></span>
+            <span class="icon icon-java"></span>
+        </div>
     </section>
 
-    <section class="section section-blue section-right" id="section-foto">
+    <section class="section section-green section-right" id="section-web">
+        <div class="section-details" id="section-details-web">
+            <span class="icon icon-sass"></span>
+            <span class="icon icon-javascript"></span>
+            <span class="icon icon-php"></span>
+            <span class="icon icon-git"></span>
+        </div>
+        <div class="container">
+            <h2 class="title">Web-Entwicklung</h2>
+            <p>Ich habe mich über die letzten Monate mit den verschiedensten Web-Development Technologien auseinander
+                gesetzt. Ich achte dabei stets auf moderne und responsive Websites, um Nutzern auf allen Endgeräten die
+                bestmögliche Erfahrung zu bieten.</p>
+        </div>
+    </section>
+
+    <section class="section section-blue section-left" id="section-foto">
         <div class="container">
             <h2 class="title">Fotografie</h2>
             <p>In meiner Freizeit beschäftige ich mich auch gerne mit Fotografie und Bildbearbeitung. Ich nutze dazu die
                 Canon EOS 700D sowie Adobe Photoshop und Lightroom.</p>
         </div>
-        <p class="section-details" id="section-details-foto">Ich habe mich über die letzten Monate mit den
-            verschiedensten Web-Development Technologien auseinander
-            gesetzt. Ich achte dabei stets auf moderne und responsive Websites, um Nutzern auf allen Endgeräten die
-            bestmögliche Erfahrung zu bieten.</p>
+        <div class="section-details">
+            <span class="icon icon-adobephotoshop"></span>
+            <span class="icon icon-adobelightroom"></span>
+        </div>
     </section>
+
+    <section class="section section-pink section-right" id="section-bild">
+        <div class="section-details">
+            <span class="icon icon-adobephotoshop"></span>
+            <span class="icon icon-adobelightroom"></span>
+        </div>
+        <div class="container">
+            <h2 class="title">Bildbearbeitung</h2>
+            <p>In meiner Freizeit beschäftige ich mich auch gerne mit Fotografie und Bildbearbeitung. Ich nutze dazu die
+                Canon EOS 700D sowie Adobe Photoshop und Lightroom.</p>
+        </div>
+    </section>
+
+    <div id="particle"></div>
 
 </main>
 

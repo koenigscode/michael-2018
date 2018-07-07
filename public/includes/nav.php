@@ -1,7 +1,7 @@
 <nav class="nav" id="nav">
-    <a href="#" class="link red">Über Mich</a>
-    <a href="#" class="link orange">Programmieren</a>
-    <a href="#" class="link green">Web-Entwicklung</a>
-    <a href="#" class="link blue">Fotografie</a>
-    <a href="#" class="link pink">Bildbearbeitung</a>
+    <a id="link-ueber" class="link red">Über Mich</a>
+    <a id="link-prog" class="link orange">Programmieren</a>
+    <a id="link-web" class="link green">Web-Entwicklung</a>
+    <a id="link-foto" class="link blue">Fotografie</a>
+    <a id="link-bild" class="link pink">Bildbearbeitung</a>
 </nav>

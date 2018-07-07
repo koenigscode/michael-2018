@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(document).ready(function() {
     // window.sr = ScrollReveal({
     //     origin: "bottom",
     //     distance: "0",
@@ -14,7 +14,11 @@ $(document).ready(() => {
     //     mouseenter: function () {
     //         var sectionId = $(this)[0].id.substring(8, $(this)[0].id.length);
     //         console.log(sectionId);
-    //         $("#section-details-" + sectionId).show();
+    //         var element = $("#section-details-" + sectionId);
+    //         element.css("width", "auto");
+    //         setTimeout(function () {
+    //             element.show("slow");
+    //         }, element.css("transition-duration"));
     //     },
     //     mouseleave: function () {
     //         var sectionId = $(this)[0].id.substring(8, $(this)[0].id.length);
@@ -23,20 +27,30 @@ $(document).ready(() => {
     //     }
     // });
 
+    $(".link").on("click", function() {
+       var linkId = $(this)[0].id;
+       var sectionId = linkId.substring(5, linkId.length);
+       var offset = $("#section-" + sectionId).offset().top;
+       var height = $("#section-" + sectionId).outerHeight();
+       var pos = offset + height/2 - $(window).height()/2;
+
+        $('html, body').animate({scrollTop: pos},'2000');
+
+    });
+
     var fadeSpeed = 1000;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var fadeSpeed = 400;
-        console.log($(window).width());
-    console.log(".");
-        if($(document).scrollTop() >= 200) {
+        if ($(document).scrollTop() >= 200) {
             $("#nav").fadeOut(fadeSpeed);
         }
-        else if($(window).width() >= 768){
+        else if ($(window).width() >= 768) {
             $("#nav").fadeIn(fadeSpeed);
         }
     });
 
+    $(window).trigger("scroll");
 
 
 });
