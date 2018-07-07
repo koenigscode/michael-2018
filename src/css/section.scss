@@ -1,0 +1,64 @@
+.section {
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  min-height: 300px;
+  padding: 50px 30px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+
+  &:hover {
+    max-width: 100%;
+
+  }
+
+  &-left {
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+  }
+
+  &-right {
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  }
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & h2 {
+    font-size: 3em;
+    margin: 0 0 10px;
+  }
+
+  & p {
+    font-size: 1.6em;
+    max-width: 600px;
+    text-align: center;
+    text-align-last: center;
+    line-height: 140%;
+  }
+
+  &-details {
+    display: none;
+    margin-top: 0;
+  }
+
+  &-blue {
+    background: linear-gradient(to right, rgba($blue, $gradient-transparency), rgba($cyan, $gradient-transparency));
+  }
+
+  &-green {
+    background: linear-gradient(to right, rgba($light-green, $gradient-transparency), rgba($lime, $gradient-transparency));
+  }
+
+  &-orange {
+    background: linear-gradient(to right, rgba($amber, $gradient-transparency), rgba($deep-orange, $gradient-transparency));
+  }
+
+}

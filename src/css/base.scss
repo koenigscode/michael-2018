@@ -1,0 +1,60 @@
+//// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px) { ... }
+//
+//// Medium devices (tablets, 768px and up)
+//@media (min-width: 768px) { ... }
+//
+//// Large devices (desktops, 992px and up)
+//@media (min-width: 992px) { ... }
+//
+//// Extra large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px) { ... }
+
+* {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  &::-moz-selection {
+    background: $light-green;
+  }
+  &::selection {
+    background: $light-blue;
+  }
+
+  font-family: $font-nav;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $dark;
+  color: #fff;
+}
+
+#particle {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}

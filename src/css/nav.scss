@@ -1,0 +1,55 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: fixed;
+  z-index: 50;
+  height: 80px;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+
+  .link {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+
+    &.red:hover {
+      border-color: $red;
+    }
+
+    &.pink:hover {
+      border-color: $pink;
+    }
+
+    &.blue:hover {
+      border-color: $light-blue;
+    }
+
+    &.green:hover {
+      border-color: $light-green;
+    }
+
+    &.yellow:hover {
+      border-color: $amber;
+    }
+
+    &.orange:hover {
+      border-color: $deep-orange;
+    }
+
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+}
