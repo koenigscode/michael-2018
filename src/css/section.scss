@@ -1,6 +1,9 @@
 .section {
   width: 90%;
-  height: 100px; /* IE fix */
+  /* IE10+ */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    height: 1px;
+  }
   min-height: 400px;
   max-width: 1000px;
   margin: 50px auto;
@@ -88,7 +91,6 @@
       }
 
       p {
-        text-align: left;
         line-height: 110%;
         text-align: center;
         font-size: 1.6em;
