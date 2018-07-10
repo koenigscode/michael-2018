@@ -1,5 +1,6 @@
 .section {
   width: 90%;
+  height: 100px; /* IE fix */
   min-height: 400px;
   max-width: 1000px;
   margin: 50px auto;
@@ -12,7 +13,7 @@
   background-size: cover;
   background-position: center;
 
-  & .content {
+  .content {
     width: 100%;
     max-width: 700px;
     display: flex;
@@ -22,24 +23,33 @@
     justify-content: center;
     align-items: flex-start;
 
-    & .title {
-      font-size: 60px;
+    .title {
+      font-size: 6em;
       margin: 0 0 5px;
       line-height: 100%;
+      width: 100%;
     }
 
-    & .subtitle {
-      font-size: 20px;
+    .subtitle {
+      font-size: 2em;
       margin: 0 0 15px;
       padding: 0 3px 0;
       font-style: italic;
+      width: 100%;
     }
 
-    & p {
-      font-size: 18px;
+    p {
+      font-size: 1.8em;
       text-align: justify;
       margin: 0;
       line-height: 130%;
+      width: 100%;
+
+      a.orange {
+        color: $orange;
+        font-weight: bold;
+        width: 100%;
+      }
     }
   }
 
@@ -68,19 +78,20 @@
       align-items: center;
 
       .title {
-        font-size: 28px;
+        font-size: 2.8em;
         text-align: center;
       }
 
       .subtitle {
         text-align: center;
-        font-size: 18px;
+        font-size: 1.8em;
       }
 
       p {
         text-align: left;
         line-height: 110%;
         text-align: center;
+        font-size: 1.6em;
       }
 
     }

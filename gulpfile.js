@@ -7,7 +7,11 @@ var gulp = require("gulp"),
     cssImport = require("postcss-import"),
     cssMixins = require("postcss-mixins"),
     sugarss = require("sugarss"),
-    sass = require("gulp-sass");
+    sass = require("gulp-sass"),
+    image = require("gulp-image"),
+    imagemin = require("gulp-imagemin"),
+    jimp = require("gulp-jimp-resize"),
+    gulpAutoprefixer = require("gulp-autoprefixer");
 
 gulp.task("style", function () {
     return gulp
@@ -24,7 +28,22 @@ gulp.task("style", function () {
 gulp.task('sass', function () {
     return gulp.src('./src/style.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulpAutoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('./public/css'));
+});
+
+gulp.task('image', function () {
+    return gulp.src('./src/img/*')
+        .pipe(jimp({
+            sizes: [
+                {"suffix": "min", "width": 1920}
+            ]
+        }))
+        .pipe(image())
+        .pipe(gulp.dest('./public/img'));
 });
 
 gulp.task("watch", function () {

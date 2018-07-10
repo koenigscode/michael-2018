@@ -16,14 +16,14 @@ require "./includes/head.php";
 </header>
 
 <main>
-
+<!--TODO: Browser Support (IE)-->
     <section class="section section-ueber">
         <div class="content">
             <h2 class="title">Über Mich</h2>
             <h3 class="subtitle">Michael König</h3>
-            <p>Nachdem ich mich über ein Jahr lang mit der Programmierung in C beschäftigt habe, lerne ich derzeit Java,
-                eine objektorientierte und plattformunabhängige Programmiersprache, die überall (u.a.
-                Android-Smartphones) vertreten ist.
+            <p>Ich bin Michi, 16 Jahre alt und gehe momentan zur HTL in St. Pölten. Meine Freizeit verbringe ich
+                größtenteils mit Web-Entwicklung, allerdings auch mit programmieren in Java sowie Fotografie &
+                Bildbearbeitung.
             </p>
         </div>
     </section>
@@ -31,9 +31,9 @@ require "./includes/head.php";
     <section class="section section-prog">
         <div class="content">
             <h2 class="title">Programmieren</h2>
-            <h3 class="subtitle">C, Java</h3>
+            <h3 class="subtitle">Java, C</h3>
             <p>Nachdem ich mich über ein Jahr lang mit der Programmierung in C beschäftigt habe und nun die Grundlagen
-                der objektorientierten Sprache Java behersche, lerne ich zurzeit GUI-Programmierung mit JavaFX.
+                von Java behersche, lerne ich zurzeit GUI-Programmierung mit JavaFX.
             </p>
         </div>
     </section>
@@ -41,10 +41,11 @@ require "./includes/head.php";
     <section class="section section-web">
         <div class="content">
             <h2 class="title">Web Development</h2>
-            <h3 class="subtitle">Sass, JS, PHP</h3>
-            <p>Ich habe mich über die letzten Monate mit den verschiedensten Web-Development Technologien auseinander
-                gesetzt. Mittlerweile habe ich mir einen guten Überblick verschafft und konzentriere mich derzeit auf
-                PHP.
+            <h3 class="subtitle">SASS, JS, PHP</h3>
+            <p>Ich habe mich in den letzten Monaten mit den verschiedensten Web-Development Technologien
+                vertraut gemacht. Mittlerweile habe ich mir einen guten Überblick verschafft und konzentriere mich
+                derzeit auf PHP. In naher Zukunft werde ich mich auch noch genauer mit einem Frontend Javascript Framework
+                auseinandersetzen.
             </p>
         </div>
     </section>
@@ -54,7 +55,8 @@ require "./includes/head.php";
             <h2 class="title">Fotografie</h2>
             <h3 class="subtitle">Canon EOS 700D</h3>
             <p>Manchmal nutze ich auch meine Freizeit, um das ein oder andere Foto zu schießen und anschließend im
-                Lightroom-Katalog zu organisieren und bearbeiten.
+                Lightroom-Katalog zu organisieren und zu bearbeiten. Gelegentlich teile ich auch das ein oder andere auf
+                <a class="orange" href="./instagram.php" title="koenigscode auf Instagram">Instagram</a>.
             </p>
         </div>
     </section>

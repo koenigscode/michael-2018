@@ -12,7 +12,12 @@
   "repository": "https://github.com/michaelkoenig2002/michael-2018.git",
   "devDependencies": {
     "autoprefixer": "^8.0.0",
+    "bluebird": "^3.5.1",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-image": "^4.3.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jimp-resize": "^2.0.2",
     "gulp-postcss": "^7.0.1",
     "gulp-sass": "^4.0.1",
     "gulp-stylus": "^2.7.0",

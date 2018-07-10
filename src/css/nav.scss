@@ -53,4 +53,9 @@
     display: none;
   }
 
+  /* IE10+ */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    position: static; /* otherwise not centered properly */
+  }
+
 }
